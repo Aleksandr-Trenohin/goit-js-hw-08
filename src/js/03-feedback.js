@@ -16,8 +16,7 @@ function onFormInput(evt) {
 }
 
 // 2
-getSavedInputs();
-function getSavedInputs() {
+(function getSavedInputs() {
   const savedData = localStorage.getItem('feedback-form-state');
   const parsedData = JSON.parse(savedData);
 
@@ -28,7 +27,7 @@ function getSavedInputs() {
     refs.message.value = parsedData.message;
   }
   formData = parsedData;
-}
+}());
 
 // 3
 refs.form.addEventListener('submit', onFormSubmit);
