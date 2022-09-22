@@ -1,11 +1,10 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // Add imports above this line
 import { galleryItems } from './gallery-items';
-// Change code below this line
 
-console.log(galleryItems);
+// Change code below this line
 
 const galleryEl = document.querySelector('.gallery');
 
@@ -18,7 +17,7 @@ const galleryList = galleryItems
       alt="${item.description}"
       onclick="event.preventDefault()"
     />
- </a >`,
+ </a >`
   )
   .join('');
 

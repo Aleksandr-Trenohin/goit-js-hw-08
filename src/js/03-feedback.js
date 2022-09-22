@@ -27,7 +27,7 @@ function onFormInput(evt) {
     refs.message.value = parsedData.message;
   }
   formData = parsedData;
-}());
+})();
 
 // 3
 refs.form.addEventListener('submit', onFormSubmit);
